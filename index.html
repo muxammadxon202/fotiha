@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Muhammadxon & Zilolaxon — Taklifnoma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="2.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="mobile-app">
+        <canvas id="sakura-canvas"></canvas>
+        
+        <div id="error-screen" class="hidden">
+            <div class="error-content">
+                <h2>Кечирасиз!</h2>
+                <p>Таклифнома топилмади. Илтимос, ҳаволани (ссылкани) тўғрилигини текшириб кўринг.</p>
+            </div>
+        </div>
+
+        <div id="welcome-screen">
+            <div class="welcome-card">
+                <h2 id="welcome-guest-text">Ҳурматли меҳмон!</h2>
+                <p>Сизни ҳаётимиздаги энг гўзал кунга таклиф этамиз</p>
+                <div class="btn-container">
+                    <button id="startBtn">Таклифномани очиш</button>
+                </div>
+            </div>
+        </div>
+
+        <main id="main-content" class="hidden">
+            
+            <section class="hero">
+                <div class="hero-content">
+                    <p class="subtitle animate-text">Биз турмуш қуряпмиз</p>
+                    <h1 class="animate-names">
+                        Muhammadxon
+                        <br>
+                        <span class="and">&</span>
+                        <br>
+                        Zilolaxon
+                    </h1>
+                    <p class="date-highlight animate-text">02 . 05 . 2026</p>
+                </div>
+            </section>
+
+            <section class="details section-padding">
+                <div class="card fade-in">
+                    <h2 id="personal-greeting" class="title-elegant">Азиз меҳмонлар!</h2>
+                    <p class="text-main">
+                        Ҳаётимиздаги энг қувончли ва унутилмас кунда — Фотиха тўйимиз шодиёнасида сизни кўришдан чексиз мамнун бўламиз. Сизнинг ташрифингиз байрамимизни янада файзли қилади!
+                    </p>
+                    
+                    <div class="divider"></div>
+                    
+                    <div class="info-block">
+                        <h3>Қачон?</h3>
+                        <p class="big-text">02 Май 2026</p>
+                        <p>Соат 11:00 да бошланади</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3>Қаерда?</h3>
+                        <p class="big-text">"Достонбек"</p>
+                        <p>Samarqand viloyati,Chelak shahri</p>
+                        <a href="https://maps.app.goo.gl/TjMmf7BNDBcCmWEB9" target="_blank" class="btn-outline">Харитада очиш</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="timer-section section-padding fade-in">
+                <h2 class="title-elegant">Фотиха тўйигача қолди</h2>
+                <div id="countdown">
+                    <div class="time-item">
+                        <span id="days">00</span>
+                        <p>кун</p>
+                    </div>
+                    <div class="time-item">
+                        <span id="hours">00</span>
+                        <p>соат</p>
+                    </div>
+                    <div class="time-item">
+                        <span id="minutes">00</span>
+                        <p>дақиқа</p>
+                    </div>
+                    <div class="time-item">
+                        <span id="seconds">00</span>
+                        <p>сония</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer-section section-padding fade-in">
+                <p class="text-main">Сизни кутиб қоламиз!</p>
+                <h2 class="title-elegant" style="font-size: 2.5rem; margin-top: 10px; color: #d4af37;">M & Z</h2>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
