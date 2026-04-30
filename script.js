@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 5. ТАЙМЕР
-    const targetDate = new Date('August 16, 2026 18:00:00').getTime();
+    const targetDate = new Date('May 2, 2026 11:00:00').getTime();
     setInterval(() => {
         const now = new Date().getTime();
         const diff = targetDate - now;
