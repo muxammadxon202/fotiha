@@ -27,8 +27,7 @@ body {
     background-color: var(--bg-main);
     min-height: 100vh; 
     position: relative; 
-    overflow-y: auto; 
-    overflow-x: hidden;
+    overflow-x: hidden; /* Исправлен баг скролла */
     box-shadow: 0 0 40px rgba(212, 175, 55, 0.15); 
 }
 
@@ -103,8 +102,8 @@ body {
 
 /* ЭКРАН ПРИВЕТСТВИЯ И ОШИБКИ */
 #welcome-screen, #error-screen {
-    position: absolute; 
-    top: 0; left: 0; width: 100%; height: 100%;
+    position: fixed; /* ИСПРАВЛЕНО: Теперь экран не ломает скролл */
+    top: 0; left: 0; width: 100%; height: 100vh;
     background: var(--bg-main); 
     display: flex; justify-content: center; align-items: center; 
     z-index: 1000; transition: opacity 1.2s ease;
